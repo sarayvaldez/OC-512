@@ -1,22 +1,14 @@
-%Homework 3 
-%Saray Valdez Hernandez
+% %Homework 3 
+% %Saray Valdez Hernandez
+clc %clearing the command window
+clear %clearing any previous variables
+x=0:.1:20; % start number, step interval, end number
+amp=[0.1 0.5 1 2]; % ampltitude matrix (enter values)
+wid=[0.5 1 2 3]; % width matrix (enter values)
+loc=[2 4 6 8]; % location matrix (enter values)
 
-x1=1:1:30;
-amp1=10;
-wid1=3;
-loc1=12;
+matrix=[amp;wid;loc]'; %combining amplitude, width, and location all into one matrix and transposing
 
-x2=1:1:30;
-amp2=7;
-wid2=4;
-loc2=21;
+y=multGauss(x, matrix); % calling the external function
 
-x3=1:1:30;
-amp3=14;
-wid3=2;
-loc3=6;
-
-y=multGauss(x1,amp1, wid1, loc1,x2,amp2,wid2,loc2,x3,amp3,wid3,loc3);
-
-plot(x2,y)
-
+plot(x,y) %plotting the sum of all y's calculated
