@@ -27,7 +27,7 @@ view(0,270) %changing to view Oregon the right way (North up)
 colormap("jet") %changing color map 
 colorbar %adding a color bar
 ylabel(colorbar, 'Precipitation (mm)') %labeling the color bar
-title('Annual Precipiation in Oregon') %adding a title to the figure
+title('1983 Annual Precipiation in Oregon') %adding a title to the figure
 xlabel('Longitude (Decimal Degrees)') %adding x axis label
 ylabel('Latitude (Decimal Degrees)') %adding y axis lavbel
 print -dpng -r300 annualprecip.png % print figure % saving figure
